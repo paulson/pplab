@@ -1,5 +1,5 @@
-//btree.java
-//demonstrates binary tree
+//BinSearchTree.java
+//demonstrates binary search tree
 //to run this program : java TreeApp
 //date :2011/07/14
 import java.io.*;
@@ -146,8 +146,6 @@ class Tree
 					System.out.print(' ');
 			}
 			System.out.println();
-			//			System.out.println();
-			//			System.out.println();
 			nBlanks /=2;
 			while(localStack.isEmpty()==false)
 				globalStack.push(localStack.pop());
@@ -223,4 +221,34 @@ class TreeApp
 		return Integer.parseInt(s);
 	}
 }
+/*
+OUTPUT
+------
+paulson@paulson-Inspiron-1525:~/pplab/2/BinSearchTree$ javac BinSearchTree.java
+Note: BinSearchTree.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+paulson@paulson-Inspiron-1525:~/pplab/2/BinSearchTree$ java TreeApp 
+Enter first letter of	show, insert, find, traverse or exit:s
+.................................................................................
+                                50                                                              
+                25                              75                              
+        12              37              --              --              
+.................................................................................
+Enter first letter of	show, insert, find, traverse or exit:i
+Enter value to insert:61
+Enter first letter of	show, insert, find, traverse or exit:s
+.................................................................................
+                                50                                                              
+                25                              75                              
+        12              37              61              --              
+.................................................................................
+Enter first letter of	show, insert, find, traverse or exit:f
+Enter value to find:61
+Found:{61}
+Enter first letter of	show, insert, find, traverse or exit:t
+Enter type 1:preOrder, 2:inOrder or 3:postOrder :-2
 
+ Inorder traversal:{12}{25}{37}{50}{61}{75}
+Enter first letter of	show, insert, find, traverse or exit:e
+paulson@paulson-Inspiron-1525:~/pplab/2/BinSearchTree$ 
+*/

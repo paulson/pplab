@@ -83,3 +83,42 @@ class Student
 			System.out.print("\nCould not find\n");
 	}
 }
+/*
+   OUTPUT
+   ------
+   paulson@paulson-Inspiron-1525:~/pplab/1$ javac Student.java 
+   paulson@paulson-Inspiron-1525:~/pplab/1$ java Student
+
+   Enter the no of Students:3
+
+RollNo:1
+Name:arun
+Age:20
+Enter the Marks:19
+24
+15
+
+RollNo:2
+Name:annie
+Age:19
+Enter the Marks:34
+30
+37
+
+RollNo:3
+Name:tintu
+Age:21
+Enter the Marks:12
+17
+23
+
+RollNo	Name	Age	Total
+1	arun	20	58
+2	annie	19	101
+3	tintu	21	52
+
+Enter the RollNo to be searched:2
+Found
+RollNo	Name	Age	Total
+2	annie	19	101
+*/
